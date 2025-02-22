@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { ParticlesBackground } from "../Particles";
 import { RESUME_URL } from "../Navbar";
 import profileImage from "@/images/IMG_4.jpeg";
+import { SiGithub, SiLinkedin } from "react-icons/si";
 
 export function Hero() {
   const container = {
@@ -45,7 +46,7 @@ export function Hero() {
             </motion.p>
             <motion.div 
               variants={item}
-              className="flex gap-4"
+              className="flex items-center gap-4"
             >
                 <Button 
                 className="transition-transform duration-200 hover:scale-105"
@@ -73,6 +74,22 @@ export function Hero() {
               >
                 Contact Me
               </Button>
+              <a 
+                href="https://github.com/Aamir-Hullur" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-foreground/60 hover:text-foreground transition-colors"
+              >
+                <SiGithub className="w-8 h-8" />
+              </a>
+              <a 
+                href="https://www.linkedin.com/in/aamir-hullur/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-foreground/60 hover:text-foreground transition-colors"
+              >
+                <SiLinkedin className="w-8 h-8" />
+              </a>
             </motion.div>
 						
           </motion.div>
