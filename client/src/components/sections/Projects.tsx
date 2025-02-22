@@ -7,12 +7,22 @@ import { useState } from "react";
 import { ProjectModal, type ProjectDetails, type ProjectCategory } from "../ProjectModal";
 import { ExternalLink } from "lucide-react";
 
+// Import images
+import leetcodeImage from "@/images/image.png";
+import youtubeImage from "@/images/Project_Structure.png";
+import wildlifeImage from "@/images/Model_architecture.png";
+import airbnbImage from "@/images/AIRBNB-STOCK-1536x864.jpg";
+import reviewImage from "@/images/review.png";
+import bloodbankImage from "@/images/ER-Diagram.png";
+import streamlitDemo from "@/images/Streamlit_demo.gif";
+import tableauDashboard from "@/images/Tableau_dashboard.png";
+
 const projects: ProjectDetails[] = [
   {
     title: "GAN-Driven Deepfake Audio Synthesis",
     description: "Implemented GANs to synthesize realistic audio content, achieving a 30% increase in data variation and a 25% improvement in audio quality.",
     longDescription: `Implemented GANs to synthesize realistic audio content, achieving a 30% increase in data variation and a 25% improvement in audio quality, while employing SHAP, and GradCAM models to analyze MEL spectrograms for better model performance insights. Designed innovative Explainable AI (XAI) models to transform black-box deep learning into transparent white-box models, achieving a 40% improvement in model understanding and enabling data-driven decision-making for optimization.`,
-    image: "src/images/Streamlit_demo.gif",
+    image: streamlitDemo,
     categories: ["AI & Machine Learning"],
     technologies: ["Python", "TensorFlow", "CNN", "GANs", "Streamlit"],
     githubUrl: "https://github.com/Aamir-Hullur/Deepfake-Audio-detection-using-XAI",
@@ -23,7 +33,7 @@ const projects: ProjectDetails[] = [
     title: "Full-Stack Video Streaming Platform",
     description: "Developed a full-stack video streaming platform with user authentication, video upload, and streaming capabilities.",
     longDescription: "Developed a full-stack video streaming platform with user authentication, video upload, and streaming capabilities. The platform features a user-friendly interface for uploading and streaming videos, with secure authentication and authorization mechanisms.",
-    image: "src/images/Project_Structure.png",
+    image: youtubeImage,
     categories: ["Full Stack Projects", "Cloud & DevOps"],
     technologies: ["React", "Node.js", "TypeScript", "GCP", "Firebase", "Docker"],
     githubUrl: "https://github.com/Aamir-Hullur/YouTube-Clone",
@@ -35,7 +45,7 @@ const projects: ProjectDetails[] = [
     title: "Deep Learning-Based Wildlife Recognition",
     description: "Developed and deployed deep learning models (ResNet-101, InceptionV3) achieving a 93% accuracy in automating the classification of wildlife images, reducing manual effort in wildlife sanctuaries.",
     longDescription: "Developed and deployed deep learning models (ResNet-101, InceptionV3) achieving a 93% accuracy in automating the classification of wildlife images, reducing manual effort in wildlife sanctuaries. Implemented an image processing pipeline with sub-models to separate blank, partial animal, and day/night images, reducing processing time by 20% while maintaining data accuracy for ecological studies.",
-    image: "src/images/Model_architecture.png",
+    image: wildlifeImage,
     categories: ["AI & Machine Learning"],
     technologies: ["Deep Learning", "CNN", "Object Detection", "ResNet-101", "InceptionV3"],
     githubUrl: "https://github.com/Aamir-Hullur/Wildlife-Detector",
@@ -50,7 +60,7 @@ const projects: ProjectDetails[] = [
     Python solutions for various algorithmic challenges. \
     The system instantly captures and processes new solutions, \
     pushing them simultaneously to GitHub for version control and Supabase for structured data storage.",
-    image: "src/images/image.png",
+    image: leetcodeImage,
     categories: ["Cloud & DevOps"],
     technologies: ["Python", "Supabase","Github API", "SQL","Data Structures", "Algorithms"],
     githubUrl: "https://github.com/Aamir-Hullur/Leetcode-Journey",
@@ -60,7 +70,7 @@ const projects: ProjectDetails[] = [
     title: "Predictive Analytics for Airbnb Pricing",
     description: "Comprehensive analysis and prediction system for AirBNB prices in New York City using machine learning and data analytics.",
     longDescription: "Comprehensive project analyzing and predicting AirBNB prices in New York City using machine learning models. Features extensive EDA on over 100,000 listings, detailed data visualization, and advanced predictive modeling for accurate price predictions.",
-    image: "src/images/AIRBNB-STOCK-1536x864.jpg",
+    image: airbnbImage,
     categories: ["AI & Machine Learning"],
     technologies: ["Python", "Data Visualization", "Machine Learning","Predictive Modeling"],
     githubUrl: "https://github.com/Aamir-Hullur/AirBNB-Price-Predictor",
@@ -70,7 +80,7 @@ const projects: ProjectDetails[] = [
     title: "Data Driven Employee Turnover Prediction",
     description: "Created machine learning models resulting in an 89% accuracy rate for predicting employee attrition, enabling strategic measures to reduce workforce turnover.",
     longDescription: "Created machine learning models resulting in an 89% accuracy rate for predicting employee attrition, enabling strategic measures to reduce workforce turnover. Compared classification models and conducted a comparative analysis using Tableau, leading to a 30% reduction in wrong classification rates.",
-    image: "src/images/Tableau_dashboard.png",
+    image: tableauDashboard,
     categories: ["AI & Machine Learning", "Cloud & DevOps"],
     technologies: ["PySpark", "Machine Learning", "Tableau", "Big Data Analytics"],
     githubUrl: "https://github.com/Aamir-Hullur/Employee-Attrition-Prediction",
@@ -81,7 +91,7 @@ const projects: ProjectDetails[] = [
     title: "Movie Review Sentiment Analysis",
     description: "Streamlit app designed for sentiment analysis of movie reviews using NLP and machine learning models.",
     longDescription: "Streamlit app designed for sentiment analysis of movie reviews. The project demonstrates the use of NLP techniques and machine learning models to analyze and visualize the sentiment of movie reviews in real-time. This app utilizes MultinomialNB and LinearSVC models to predict sentiment with high accuracy.",
-    image: "src/images/review.png",
+    image: reviewImage,
     categories: ["AI & Machine Learning", "Full Stack Projects"],
     technologies: ["Python", "NLP", "Streamlit", "MultinomialNB", "LinearSVC"],
     githubUrl: "https://github.com/Aamir-Hullur/Movie-Review-Sentiment-Analysis",
@@ -91,7 +101,7 @@ const projects: ProjectDetails[] = [
     title: "Blood Bank Management System",
     description: "Full-stack blood bank management system for managing donor information and blood stock.",
     longDescription: "A comprehensive blood bank management system developed using modern web technologies. This system manages blood bank operations, including donor and recipient information tracking and blood stock management.",
-    image: "src/images/ER-Diagram.png",
+    image: bloodbankImage,
     categories: ["Full Stack Projects"],
     technologies: ["PHP", "MySQL", "HTML", "CSS"],
     githubUrl: "https://github.com/Aamir-Hullur/BloodBank-Management-System",

@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { ParticlesBackground } from "../Particles";
 import { RESUME_URL } from "../Navbar";
+import profileImage from "@/images/IMG_4.jpeg";
 
 export function Hero() {
   const container = {
@@ -87,8 +88,7 @@ export function Hero() {
             className="relative aspect-square"
           >
             <img
-              // src="https://images.unsplash.com/photo-1573496799515-eebbb63814f2"
-              src="src/images/IMG_4.jpeg"
+              src={profileImage}
               alt="Profile"
               className="rounded-full object-cover w-full h-full shadow-lg"
             />
