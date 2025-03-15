@@ -17,7 +17,7 @@ const experiences = [
     company: "Luddy School of Informatics, Computing, and Engineering",
     role: "Graduate Teaching Assistant",
     period: "August 2024 - December 2024",
-    logo: "https://media.licdn.com/dms/image/v2/C4E07AQFlifUuy4KJxg/group-logo_image-shrink_48x48/group-logo_image-shrink_48x48/0/1631007070652?e=1740848400&v=beta&t=ZWSPYPxttDPUtu1T-uNVP6pW2jDooAKHG70NEte4GTM",
+    logo: "https://media.licdn.com/dms/image/v2/C4E0BAQGVE4xmb_ZnGw/company-logo_200_200/company-logo_200_200/0/1630591272799?e=1750291200&v=beta&t=Rp5pSjwOIm3ONliI56hL4HjSz_UMiQrMsvERChiSdtM",
     descriptionPoints: [
       "Served as Graduate Associate Instructor for CSCI-B 351 Introduction to Artificial Intelligence, mentoring and guiding a diverse cohort of undergraduate students.",
       "Facilitated student learning in core AI concepts including neural networks, heuristics, graph search, logic, and knowledge representation systems.",
