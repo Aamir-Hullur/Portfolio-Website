@@ -108,7 +108,6 @@ export function Hero() {
               src={profileImage}
               alt="Profile"
               className="rounded-full object-cover w-full h-full shadow-lg"
-              loading="lazy"
             />
           </motion.div>
         </div>
