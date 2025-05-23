@@ -9,7 +9,7 @@ const education = [
     logo: "https://media.licdn.com/dms/image/v2/C560BAQFonK534Iq8-Q/company-logo_200_200/company-logo_200_200/0/1631332394799?e=1748476800&v=beta&t=cmMkkh2Uy8sMaCuC2PGdEbws6LzSSWgbATv0GzFNhds",
     detailsPoints: [
       "Relevant Coursework: Applied Machine Learning, Data Mining, Computer Vision, Information Visualization, Big Data Applications",
-      "GPA: 3.93"
+      "GPA: 3.94"
     ]
   },
   {

@@ -11,8 +11,5 @@ node_modules
 !.vscode/extensions.json
 .DS_Store
 
-
-
-
-
-
+project-titles.txt
+Projects-List.txt

@@ -11,7 +11,7 @@ const navItems = [
   { label: "Contact", href: "#contact" },
 ];
 
-export const RESUME_URL = "https://cd227723-dca8-4391-b75c-fbcc2468da10.filesusr.com/ugd/51e891_b970f5c73c5741518506ccde9ab4b8e1.pdf";
+export const RESUME_URL = "https://drive.google.com/file/d/1Ow7r_YrYl_rVidYWNTtPZgP52h32myUp/view?usp=sharing";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);

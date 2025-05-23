@@ -1,62 +1,71 @@
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
-import { SiPython, SiReact, SiAmazon, SiTensorflow } from "react-icons/si";
+import { SiPython, SiReact, SiNodedotjs, SiGit, SiTensorflow, SiDjango, SiSpringboot, SiKubernetes, SiTerraform } from "react-icons/si";
 
 const skills = {
-  "Machine Learning & AI": {
-    icon: <SiTensorflow className="w-8 h-8" />,
+  "Languages": {
+    icon: <SiPython className="w-8 h-8" />,
+    items: [
+      "Python",
+      "JavaScript",
+      "TypeScript",
+      "SQL (MySQL, Postgres)",
+      "MongoDB",
+      "R",
+      "HTML/CSS"
+    ],
+  },
+  "Frontend Technologies": {
+    icon: <SiReact className="w-8 h-8" />,
+    items: [
+      "React",
+      "NextJS",
+      "Redux",
+      "TailwindCSS",
+      // "Jest/Testing Library"
+    ],
+  },
+  "Backend Technologies": {
+    icon: <SiNodedotjs className="w-8 h-8" />,
+    items: [
+      "Node.js",
+      "Express.js",
+      "Flask",
+      "FastAPI",
+      "Django",
+      // "Spring Boot",
+      "Prisma ORM",
+      "REST APIs",
+      "GraphQL",
+      "Redis",
+      "Microservices"
+    ],
+  },
+  "Developer Tools": {
+    icon: <SiGit className="w-8 h-8" />,
+    items: [
+      "Git",
+      "Docker",
+      "Kubernetes",
+      // "CI/CD (e.g., GitHub Actions)",
+      "Google Cloud Platform",
+      "AWS",
+      // "Terraform",
+      "Vercel SDK",
+      "Firebase"
+    ],
+  },
+  "AI/Machine Learning": { 
+    icon: <SiTensorflow className="w-8 h-8" />, 
     items: [
       "TensorFlow",
       "PyTorch",
       "Scikit-learn",
+      "Pandas & NumPy",
+      "NLP (Natural Language Processing)",
       "Computer Vision",
-      "Natural Language Processing",
-      "Deep Learning",
       "MLOps"
-    ],
-  },
-  "Data Science & Databases": {
-    icon: <SiPython className="w-8 h-8" />,
-    items: [
-      "Python",
-      "R",
-      "SQL",
-      "Pandas",
-      "NumPy",
-      "NoSQL",
-      "Supabase",
-      "Data Visualization",
-      "Statistical Analysis",
-      "Predictive Modeling",
-      "Streamlit"
-   ],
-  },
-  "Web Development": {
-    icon: <SiReact className="w-8 h-8" />,
-    items: [
-      "React",
-      "TypeScript",
-      "Node.js",
-      "Next.js",
-      "GraphQL",
-      "REST APIs",
-      "Tailwind CSS",
-      "Frontend Architecture"
-    ],
-  },
-  "Cloud & DevOps": {
-    icon: <SiAmazon className="w-8 h-8" />,
-    items: [
-      "AWS",
-      "GCP",
-      "Docker",
-      // "Kubernetes",
-      "CI/CD",
-      "Infrastructure as Code",
-      "Microservices",
-      "System Design",
-      "Cloud Architecture"
     ],
   },
 };

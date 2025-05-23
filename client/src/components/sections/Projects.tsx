@@ -16,8 +16,33 @@ import reviewImage from "@/images/review.png";
 import bloodbankImage from "@/images/ER-Diagram.png";
 import streamlitDemo from "@/images/Streamlit_demo.gif";
 import tableauDashboard from "@/images/Tableau_dashboard.png";
+import flightimage from "@/images/Flight_Delays.png";
+import scriptViz from "@/images/script-viz.png";
+import nmtVizImage from "@/images/nmt.png";
+import serviceWowImage from "@/images/IU_Hackathon2025.png";
+import deepDiveImage from "@/images/deepDive.png"
 
 const projects: ProjectDetails[] = [
+  {
+    title: "DeepDive",
+    description: "A sophisticated AI-powered research assistant that leverages advanced language models (Gemini, OpenAI) to generate comprehensive reports on any topic through automated web research and content analysis.",
+    longDescription: "Built a next-generation research assistant that combines multiple AI models to automate in-depth research. Features include intelligent search query generation, multi-provider AI model support (Gemini, OpenAI, OpenRouter), real-time research progress tracking, interactive topic clarification, and Markdown report generation with source citations. The system employs a modular architecture with React/Next.js frontend, distributed backend processing, and Zustand for state management. Advanced features include customizable research iterations, content analysis, and seamless integration with multiple AI model providers.",
+    image: deepDiveImage,
+    categories: ["AI & Machine Learning", "Full Stack Projects"],
+    technologies: ["Next.js", "React", "TypeScript", "Google Gemini", "OpenAI", "Tailwind CSS", "Zustand"],
+    githubUrl: "https://github.com/Aamir-Hullur/DeepDive",
+    featured: true
+  },
+  {
+    title: "Idea Management Platform",
+    description: "Built an AI-powered innovation management platform for IU Hackathon 2025 that evaluates and prioritizes ideas using Google's Gemini model. Features real-time analytics, ROI vs. Effort visualizations, and automated scoring with explainable AI.",
+    longDescription: "An intelligent innovation management platform that revolutionizes how organizations evaluate and prioritize ideas. Features include AI-driven evaluation using Google's Gemini model with ReAct reasoning, real-time analytics dashboard showing ROI vs. Effort metrics, category analysis, and priority-based filtering. The system auto-scores ideas across multiple dimensions: ROI, effort, strategic alignment, and risk, providing transparent justifications for each score. Built with modern technologies including React 19, Tailwind CSS, Firebase for real-time updates, and Recharts for interactive visualizations.",
+    image: serviceWowImage,
+    categories: ["Full Stack Projects", "AI & Machine Learning", "Cloud & DevOps"],
+    technologies: ["React", "Firebase", "Google Gemini AI", "TypeScript", "Tailwind CSS", "Recharts"],
+    githubUrl: "https://github.com/Aamir-Hullur/IU-hackathon-2025",
+    featured: false
+  },
   {
     title: "GAN-Driven Deepfake Audio Synthesis",
     description: "Implemented GANs to synthesize realistic audio content, achieving a 30% increase in data variation and a 25% improvement in audio quality.",
@@ -27,7 +52,7 @@ const projects: ProjectDetails[] = [
     technologies: ["Python", "TensorFlow", "CNN", "GANs", "Streamlit"],
     githubUrl: "https://github.com/Aamir-Hullur/Deepfake-Audio-detection-using-XAI",
     // liveUrl: "",
-    featured: true,
+    featured: false,
   },
   {
     title: "Full-Stack Video Streaming Platform",
@@ -40,7 +65,36 @@ const projects: ProjectDetails[] = [
     liveUrl: "https://yt-web-client-649896679555.us-central1.run.app/",
     featured: true
   },
-
+  {
+    title: "Scalable Big Data Pipeline for Flight Delay Analysis",
+    description: "Designed and implemented a scalable big data pipeline on AWS using PySpark for efficient processing and visualization of flight delay data.",
+    longDescription: "Developed a distributed big data processing pipeline on AWS leveraging PySpark to handle large-scale flight delay datasets. Configured AWS EC2 instances with Linux for a scalable computing environment and optimized PySpark performance. Utilized SageMaker Autopilot for AutoML model development and created interactive dashboards in QuickSight for data visualization. Addressed AWS IAM roles, cost optimization, and security policies for a scalable and cost-efficient solution.",
+    image: flightimage,
+    categories: ["AI & Machine Learning", "Cloud & DevOps"],
+    technologies: ["PySpark", "AWS S3", "EC2", "SageMaker", "QuickSight", "Lambda", "IAM", "SparkSQL"],
+    githubUrl: "https://github.com/Aamir-Hullur/Flight-Delays-Analysis",
+    featured: false
+  },
+  {
+    title: "Neural Machine Translation System",
+    description: "Developed a neural machine translation system for English-French translation using sequence-to-sequence architecture with attention mechanism, achieving a good BLEU score on the test set.",
+    longDescription: "Implemented a sophisticated neural machine translation system using PyTorch, featuring an encoder-decoder architecture with an attention mechanism. The system includes beam search decoding, BLEU score evaluation, and a modular training pipeline. Achieved significant improvements in translation quality through iterative model enhancements, including beam width optimization and full dataset training. The system supports both static and interactive translation with attention visualization for model interpretability.",
+    image: nmtVizImage,
+    categories: ["AI & Machine Learning"],
+    technologies: ["PyTorch", "LSTM", "Attention Mechanism", "NLTK", "Python", "Beam Search", "Transformers"],
+    githubUrl: "https://github.com/Aamir-Hullur/neural-machine-translation",
+    featured: false
+  },
+  {
+    title: "Script Visualizer",
+    description: "A web application that allows users to generate data visualizations from Python and R scripts, with secure code execution in Docker containers and a rich development environment.",
+    longDescription: "Developed a web application for generating data visualizations from Python and R scripts. Implemented secure code execution using Docker containers with resource limits and network restrictions. Features include Monaco Editor integration for enhanced code editing, support for both static (PNG) and interactive (HTML) visualizations, dark/light theme support, and real-time preview. The system uses FastAPI for the backend, React with TypeScript for the frontend, and includes comprehensive error handling and debugging capabilities.",
+    image: scriptViz,
+    categories: ["Full Stack Projects", "Cloud & DevOps"],
+    technologies: ["React", "TypeScript", "FastAPI", "Docker", "Python", "R", "Monaco Editor", "TailwindCSS"],
+    githubUrl: "https://github.com/Aamir-Hullur/script-visualizer",
+    featured: true
+  },
   {
     title: "Deep Learning-Based Wildlife Recognition",
     description: "Developed and deployed deep learning models (ResNet-101, InceptionV3) achieving a 93% accuracy in automating the classification of wildlife images, reducing manual effort in wildlife sanctuaries.",
@@ -49,8 +103,7 @@ const projects: ProjectDetails[] = [
     categories: ["AI & Machine Learning"],
     technologies: ["Deep Learning", "CNN", "Object Detection", "ResNet-101", "InceptionV3"],
     githubUrl: "https://github.com/Aamir-Hullur/Wildlife-Detector",
-    // liveUrl: "https://wildlife.example.com",
-    featured: true
+    featured: false,
   },
 
   {
@@ -64,7 +117,7 @@ const projects: ProjectDetails[] = [
     categories: ["Cloud & DevOps"],
     technologies: ["Python", "Supabase","Github API", "SQL","Data Structures", "Algorithms"],
     githubUrl: "https://github.com/Aamir-Hullur/Leetcode-Journey",
-    featured: true
+    featured: false,
   },
   {
     title: "Predictive Analytics for Airbnb Pricing",
@@ -84,7 +137,7 @@ const projects: ProjectDetails[] = [
     categories: ["AI & Machine Learning", "Cloud & DevOps"],
     technologies: ["PySpark", "Machine Learning", "Tableau", "Big Data Analytics"],
     githubUrl: "https://github.com/Aamir-Hullur/Employee-Attrition-Prediction",
-    // liveUrl: "https://dashboard.example.com",
+
     featured: false
   },
   {
@@ -106,7 +159,7 @@ const projects: ProjectDetails[] = [
     technologies: ["PHP", "MySQL", "HTML", "CSS"],
     githubUrl: "https://github.com/Aamir-Hullur/BloodBank-Management-System",
     featured: false,
-  }
+  },
 ];
 
 const filterCategories: ProjectCategory[] = [
@@ -227,7 +280,7 @@ export function Projects({ showAll = false }: ProjectsProps) {
                       <CardContent className="p-6">
                         <div className="flex justify-between items-start mb-2">
                           <h3 className="text-xl font-bold">{project.title}</h3>
-                          {project.liveUrl && (
+                          {(project.liveUrl || project.githubUrl) && (
                             <ExternalLink className="w-4 h-4 text-muted-foreground" />
                           )}
                         </div>

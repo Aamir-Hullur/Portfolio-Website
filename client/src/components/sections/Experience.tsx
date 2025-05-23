@@ -27,7 +27,7 @@ const experiences = [
   {
     company: "Hyphenova",
     role: "Data Science Intern",
-    period: "June 2024 – November 2024",
+    period: "June 2024 - November 2024",
     logo: "https://media.licdn.com/dms/image/v2/C4D0BAQGkJccMsdITsA/company-logo_200_200/company-logo_200_200/0/1642628341508/hyphenova_network_logo?e=1748476800&v=beta&t=TFi7droxQso4tmpaxwYxwCk9SF9FpinEkWrItNatXoc",
     descriptionPoints: [
       "Built an R Shiny dashboard that provided real-time user analytics and visualizations, enhancing data accessibility for the team and reducing reporting time by 20%.",

@@ -53,7 +53,7 @@ export function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
                 <div>
                   <h2 className="text-2xl font-bold mb-2">{project.title}</h2>
                   {project.categories.map((category) => (
-                    <Badge key={category} className="mb-4">
+                    <Badge key={category} className="mb-4 mr-2">
                       {category}
                     </Badge>
                   ))}
