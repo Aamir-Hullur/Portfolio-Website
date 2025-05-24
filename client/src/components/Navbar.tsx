@@ -3,6 +3,7 @@ import { ThemeToggle } from "./ThemeToggle";
 import { useState, useEffect } from "react";
 import { Menu, X, FileText } from "lucide-react";
 import { useLocation, Link } from "wouter";
+import { trackEvent } from "@/utils/analytics";
 
 const navItems = [
   { label: "About", href: "#about" },
@@ -69,7 +70,16 @@ export function Navbar() {
               className="flex items-center gap-2"
               asChild
             >
-              <a href={RESUME_URL} target="_blank" rel="noopener noreferrer">
+              <a 
+                href={RESUME_URL} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                onClick={() => {
+                  trackEvent('Resume Button Click', { 
+                    source: 'navbar'
+                  });
+                }}
+              >
                 <FileText className="w-4 h-4" />
                 Resume
               </a>
@@ -106,7 +116,16 @@ export function Navbar() {
               className="flex items-center gap-2 w-full justify-center"
               asChild
             >
-              <a href={RESUME_URL} target="_blank" rel="noopener noreferrer">
+              <a 
+                href={RESUME_URL} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                onClick={() => {
+                  trackEvent('Resume Button Click', { 
+                    source: 'navbar-mobile'
+                  });
+                }}
+              >
                 <FileText className="w-4 h-4" />
                 Resume
               </a>

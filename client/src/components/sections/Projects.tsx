@@ -62,7 +62,7 @@ const projects: ProjectDetails[] = [
     categories: ["Full Stack Projects", "Cloud & DevOps"],
     technologies: ["React", "Node.js", "TypeScript", "GCP", "Firebase", "Docker"],
     githubUrl: "https://github.com/Aamir-Hullur/YouTube-Clone",
-    liveUrl: "https://yt-web-client-649896679555.us-central1.run.app/",
+    // liveUrl: "https://yt-web-client-649896679555.us-central1.run.app/",
     featured: true
   },
   {

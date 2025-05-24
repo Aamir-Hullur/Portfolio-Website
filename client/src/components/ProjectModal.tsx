@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
+import { trackEvent } from "@/utils/analytics";
 
 export type ProjectCategory = "AI & Machine Learning" | "Full Stack Projects" | "Cloud & DevOps";
 
@@ -85,6 +86,12 @@ export function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2"
+                      onClick={() => {
+                        trackEvent('View Code Button Click', { 
+                          project: project.title,
+                          source: 'modal'
+                        });
+                      }}
                     >
                       <Github className="w-4 h-4" />
                       View Code
@@ -98,6 +105,12 @@ export function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2"
+                      onClick={() => {
+                        trackEvent('Live Demo Button Click', { 
+                          project: project.title,
+                          source: 'modal'
+                        });
+                      }}
                     >
                       <ExternalLink className="w-4 h-4" />
                       Live Demo

@@ -4,6 +4,7 @@ import { ParticlesBackground } from "../Particles";
 import { RESUME_URL } from "../Navbar";
 import profileImage from "@/images/IMG_4.jpeg";
 import { SiGithub, SiLinkedin } from "react-icons/si";
+import { trackEvent } from "@/utils/analytics";
 
 export function Hero() {
   const container = {
@@ -51,6 +52,10 @@ export function Hero() {
                 <Button 
                 className="transition-transform duration-200 hover:scale-105"
                 onClick={async () => {
+                  trackEvent('Resume Button Click', { 
+                    source: 'hero'
+                  });
+                  
                   const response = await fetch(RESUME_URL);
                   const blob = await response.blob();
                   const url = window.URL.createObjectURL(blob);
@@ -79,6 +84,11 @@ export function Hero() {
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-foreground/60 hover:text-foreground transition-colors"
+                onClick={() => {
+                  trackEvent('GitHub Button Click', { 
+                    source: 'hero'
+                  });
+                }}
               >
                 <SiGithub className="w-8 h-8" />
               </a>
@@ -87,6 +97,11 @@ export function Hero() {
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-foreground/60 hover:text-foreground transition-colors"
+                onClick={() => {
+                  trackEvent('LinkedIn Button Click', { 
+                    source: 'hero'
+                  });
+                }}
               >
                 <SiLinkedin className="w-8 h-8" />
               </a>
