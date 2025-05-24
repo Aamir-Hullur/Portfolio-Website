@@ -3,18 +3,18 @@
   publish = "dist"
 
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-
-[[redirects]]
-  from   = "/analytics/script.js"
+  from   = "analytics/script.js"
   to     = "https://cloud.umami.is/script.js"
   status = 200
   force  = true
 
 [[redirects]]
-  from   = "/analytics/api/*"
+  from   = "analytics/api/*"
   to     = "https://cloud.umami.is/api/:splat"
   status = 200
   force  = true
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
